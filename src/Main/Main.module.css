@@ -1,0 +1,27 @@
+.mainContent {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+    width: 300px;
+    border: 2px solid;
+}
+
+.photo {
+    width: 300px;
+    border: 2px solid;
+    height: 300px;
+}

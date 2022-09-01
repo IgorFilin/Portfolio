@@ -1,0 +1,22 @@
+.project {
+    border: 1px solid;
+    text-align: center;
+    width: 300px;
+    margin:10px;
+}
+.imgProject{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-image: url("");
+    background-size: 300px;
+    background-position: center;
+    background-color: beige;
+}
+.textTitle{
+    margin: 5px;
+}
+.textDiscription{
+    margin: 5px;
+}

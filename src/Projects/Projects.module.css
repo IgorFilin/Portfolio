@@ -1,0 +1,20 @@
+.mainBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkturquoise;
+}
+.container {
+    border: 2px solid;
+    width: 80%;
+}
+.text {
+    text-align: center;
+}
+.projectsContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid;
+}
