@@ -1,7 +1,7 @@
 .mainContent {
     display: flex;
     align-items: center;
-    background-color: aqua;
+    background-color: #f6fbff;
     height: 100vh;
 }
 .container{
@@ -10,14 +10,27 @@
     flex-wrap: wrap;
     align-items: center;
     width: 80%;
-    border: 1px solid;
     margin: 0 auto;
 }
-
 .text {
-    text-align: center;
-    width: 300px;
-    border: 2px solid;
+    align-self: start;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    width: 400px;
+
+}
+.textHello{
+    font-size: 30px;
+    margin: 0;
+}
+.textDeveloper{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.textName{
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .photo {

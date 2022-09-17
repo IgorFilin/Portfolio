@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #61dafb;
+    background-color: #F4F5F7;
 }
 
 .content {
@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: space-around;
     width: 80%;
-    border: 2px solid;
 }
 
 .text {
@@ -36,4 +35,10 @@
 }
 .formContacts input {
     padding: 5px;
+}
+@media screen and (max-width: 950px) {
+    .formContacts{
+        width: 100%;
+    }
+
 }

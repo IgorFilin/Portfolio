@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './Contacts.module.css'
+import HeaderTitle from "../common/HeaderTitle";
 
 export const Contacts = () => {
     return (
         <div className={s.mainBlock}>
         <div className={s.content}>
-            <h3 className={s.text}>Contacts</h3>
+            <HeaderTitle title={'Contacts'}/>
             <form className={s.formContacts}>
                 <input type="text"/>
                 <input type="text"/>

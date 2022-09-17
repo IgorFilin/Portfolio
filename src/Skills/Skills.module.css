@@ -3,14 +3,12 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: #F4F5F7;
 }
 .container {
-    border: 2px solid;
     width: 80%;
 }
 .text {
-    border: 2px solid;
     text-align: center;
 }
 .skillsBlock {
