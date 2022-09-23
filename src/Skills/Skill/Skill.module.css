@@ -1,10 +1,10 @@
 .skillContainer {
     display: flex;
     flex-direction: column;
-    border: 2px solid;
     text-align: center;
     width: 200px;
     margin: 5px;
+    background-color: #FFF;
 }
 .icon{
     align-self: center;
@@ -12,4 +12,21 @@
     height: 50px;
     border: solid 2px;
     background-color: #61dafb;
+}
+.titleSkill {
+    margin: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #18191d;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+}
+.textDiscription{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.75em;
+    margin: 0 0 20px;
+    color: #868a9b;
+    font-weight: 500;
 }

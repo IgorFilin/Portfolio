@@ -12,7 +12,7 @@ export const Contacts = () => {
                 <input type="text"/>
                 <textarea className={s.textareaContacts} ></textarea>
             </form>
-            <button>Submit</button>
+            <button className={s.buttonSubmit}>Submit</button>
         </div>
             </div>
     );

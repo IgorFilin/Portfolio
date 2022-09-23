@@ -5,7 +5,7 @@ export const RemoteWork = () => {
     return (
         <div className={s.mainBlock}>
             <div className={s.container}>
-                <h3>Considering remote work</h3>
+                <h3 className={s.textWork}>Considering remote work</h3>
                 <button className={s.button}>Hire me</button>
             </div>
         </div>

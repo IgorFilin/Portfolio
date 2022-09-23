@@ -11,7 +11,13 @@
 
 .projectsContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     border: 2px solid;
+    align-items: flex-start;
+}
+@media screen and (max-width: 1075px) {
+    .projectsContainer{
+        justify-content: space-around;
+    }
 }

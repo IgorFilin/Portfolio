@@ -28,3 +28,16 @@
     width: 50px;
     height: 50px;
 }
+.myName{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.textRights{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 2px;
+}

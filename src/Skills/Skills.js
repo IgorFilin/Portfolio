@@ -9,12 +9,12 @@ export const Skills = () => {
             <div className={s.container}>
                 <HeaderTitle title={'Skills'}/>
                 <div className={s.skillsBlock}>
-                    <Skill title={'title skill'} discription={'discription skill'}/>
-                    <Skill title={'title skill'} discription={'discription skill'}/>
-                    <Skill title={'title skill'}discription={'discription skill'}/>
-                    <Skill title={'title skill'}discription={'discription skill'}/>
-                    <Skill title={'title skill'}discription={'discription skill'}/>
-                    <Skill title={'title skill'}discription={'discription skill'}/>
+                    <Skill title={'Title skill'} discription={'discription skill'}/>
+                    <Skill title={'Title skill'} discription={'discription skill'}/>
+                    <Skill title={'Title skill'}discription={'discription skill'}/>
+                    <Skill title={'Title skill'}discription={'discription skill'}/>
+                    <Skill title={'Title skill'}discription={'discription skill'}/>
+                    <Skill title={'Title skill'}discription={'discription skill'}/>
                 </div>
             </div>
         </div>

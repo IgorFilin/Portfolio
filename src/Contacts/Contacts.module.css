@@ -42,3 +42,12 @@
     }
 
 }
+.buttonSubmit{
+    padding: 7px 20px 7px 20px;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.75em;
+    color: #868a9b;
+    font-weight: 500;
+}
