@@ -4,15 +4,42 @@
     text-align: center;
     width: 200px;
     margin: 5px;
-    background-color: #FFF;
 }
-.icon{
+
+.iconContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBody {
     align-self: center;
-    width: 50px;
-    height: 50px;
-    border: solid 2px;
-    background-color: #61dafb;
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    rotate: 45deg;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
 }
+/*.iconContainer:hover{*/
+/*    transition: 1s;*/
+/*    transform: rotate(-180deg);*/
+/*}*/
+/*.iconContainer:hover > svg{*/
+/*    transition: 1s;*/
+/*    transform: rotate(180deg);*/
+/*}*/
+
+.iconImg {
+    position: absolute;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
 .titleSkill {
     margin: 5px;
     font-size: 20px;
@@ -22,7 +49,8 @@
     font-family: 'Poppins', sans-serif;
     line-height: 1.5em;
 }
-.textDiscription{
+
+.textDiscription {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.75em;

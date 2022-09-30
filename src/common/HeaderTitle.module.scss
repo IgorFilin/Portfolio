@@ -1,0 +1,30 @@
+@import "src/common/sass/variables";
+
+.title{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    overflow: hidden;
+    & h2 {
+        display: inline-block;
+        position: relative;
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 5000px;
+            height: 1px;
+            background-color: $backgroundColorLineHeaderTitle;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

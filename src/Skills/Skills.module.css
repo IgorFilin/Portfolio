@@ -12,8 +12,8 @@
     text-align: center;
 }
 .skillsBlock {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    border: 2px solid;
 }
