@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "../FooterMessengerCell/FooterMessengerCell.module.css";
+import s from "../FooterMessengerCell/FooterMessengerCell.module.scss";
 
 const FooterMessengerCell = (props) => {
     return (

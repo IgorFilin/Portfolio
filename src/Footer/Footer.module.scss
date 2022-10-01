@@ -1,0 +1,39 @@
+@import "src/common/sass/variables";
+
+.mainBlock {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: $backgroundColor;
+    height: 220px;
+    .contentBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        .myName{
+           @include fontFamilyFooter;
+            color: $textColor;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+        }
+        .block{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 320px;
+            height: 70px;
+        }
+        .textRights{
+            @include fontFamilyFooter;
+            color: $textColor;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+
+
+
+
+

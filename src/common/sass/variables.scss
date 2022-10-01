@@ -3,3 +3,16 @@ $backgroundColorDark:#333;
 $backgroundColor:#f6fbff;
 $backgroundColorLineHeaderTitle:#7d7789;
 $backgroundSecondColor:#F4F5F7;
+
+@mixin contactsText {
+  background-color: #333;
+  border: 1px solid #4a4a4a;
+  color: $backgroundColor;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+}
+@mixin fontFamilyFooter{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import s from './Contacts.module.css'
-import HeaderTitle from "../common/HeaderTitle";
+import s from './Contacts.module.scss'
+import HeaderTitle from "../common/components/HeaderTitle";
 
 export const Contacts = () => {
     return (

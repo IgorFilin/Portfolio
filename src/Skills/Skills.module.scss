@@ -1,0 +1,24 @@
+@import "src/common/sass/variables";
+.mainBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $backgroundSecondColor;
+  padding-top: 50px;
+
+  .container {
+    width: 80%;
+
+    .skillsBlock {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 530px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+

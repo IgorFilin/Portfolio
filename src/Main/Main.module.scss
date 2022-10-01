@@ -1,0 +1,50 @@
+@import "src/common/sass/variables";
+.mainContent {
+  display: flex;
+  align-items: center;
+  background-color: $backgroundColor;
+  height: 100vh;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    .text {
+      align-self: start;
+      line-height: 1.2;
+      font-family: 'Poppins', sans-serif;
+      color: $textColor;
+      width: 400px;
+      .textHello {
+        font-size: 30px;
+        margin: 0;
+      }
+      .textName {
+        font-size: 50px;
+        font-weight: 700;
+      }
+      .textDeveloper {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+    }
+    .photo {
+      width: 300px;
+      border: 2px solid;
+      height: 300px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
