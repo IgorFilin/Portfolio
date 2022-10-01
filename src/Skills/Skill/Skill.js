@@ -9,7 +9,6 @@ export const Skill = (props) => {
                 <svg width={'55px'} height={'55px'}  className={s.iconImg} style={props.style}></svg>
             </div>
             <h3 className={s.titleSkill}>{props.title}</h3>
-            <h4 className={s.textDiscription}>{props.discription}</h4>
         </div>
     );
 };

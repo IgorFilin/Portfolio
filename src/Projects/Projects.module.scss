@@ -12,9 +12,10 @@
 
     .projectsContainer {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
-      border: 2px solid;
+      gap: 30px;
+      width: 100%;
       align-items: flex-start;
       @media screen and (max-width: 1075px) {
         justify-content: space-around;

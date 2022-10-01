@@ -4,7 +4,7 @@
   text-align: center;
   width: 400px;
   margin: 10px;
-  background-color: $backgroundSecondColor;
+  background-color: $backgroundColorDark;
 
   .imgProject {
     position: relative;
@@ -12,10 +12,9 @@
     align-items: center;
     justify-content: center;
     height: 200px;
-    object-fit: cover;
-    background-size: 300px;
+    background-size: cover;
     background-position: center;
-    background-color: beige;
+    background-repeat: no-repeat;
 
     &::before {
       position: absolute;
@@ -44,7 +43,7 @@
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 500;
-    color: #18191d;
+    color: $backgroundColor;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5em;
   }
@@ -54,7 +53,7 @@
     font-size: 14px;
     line-height: 1.75em;
     margin: 0 0 20px;
-    color: #868a9b;
+    color: $backgroundColor;
     font-weight: 500;
   }
 }

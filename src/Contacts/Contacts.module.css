@@ -14,40 +14,45 @@
     width: 80%;
 }
 
-.text {
-    margin: 0 auto;
-}
-
 .formContacts {
     display: flex;
     flex-direction: column;
-    border: 2px solid;
     width: 70%;
     margin: 50px;
 }
-.textareaContacts{
+
+.formContacts input {
+    background-color: #333;
+    border: 1px solid #4a4a4a;
+    color: #f6fbff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
+    margin-bottom: 0.5rem
+}
+
+.formContacts textarea{
     resize: none;
     height: 120px;
-
+    background-color: #333;
+    border: 1px solid #4a4a4a;
+    color: #f6fbff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
 }
-.content button {
+.buttonSubmit{
     padding: 15px;
-}
-.formContacts input {
-    padding: 5px;
+    background-color: #333;
+    border: 1px solid #4a4a4a;
+    color: #f6fbff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
 }
 @media screen and (max-width: 950px) {
     .formContacts{
         width: 100%;
     }
 
-}
-.buttonSubmit{
-    padding: 7px 20px 7px 20px;
-    margin: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 1.75em;
-    color: #868a9b;
-    font-weight: 500;
 }

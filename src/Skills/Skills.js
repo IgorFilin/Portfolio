@@ -21,6 +21,7 @@ import webpackSvg from './../common/img/icons/webpack.svg'
 import nodeSvg from './../common/img/icons/node.svg'
 import unitTestsSvg from './../common/img/icons/unitTests.svg'
 import javascriptSvg from './../common/img/icons/javascript.svg'
+import SnapshotSvg from './../common/img/icons/snapshot.svg'
 
 export const Skills = () => {
 
@@ -81,30 +82,35 @@ export const Skills = () => {
     const javascript = {
         backgroundImage:`url(${javascriptSvg})`,
     }
+    const SnapshotTests = {
+        backgroundImage:`url(${SnapshotSvg})`,
+    }
+
     return (
         <div className={s.mainBlock}>
             <div className={s.container}>
                 <HeaderTitle title={'Skills'}/>
                 <div className={s.skillsBlock}>
-                    <Skill style={react} title={'REACT'} discription={'discription skill'}/>
-                    <Skill style={redux} title={'REDUX'} discription={'discription skill'}/>
-                    <Skill style={typeScript} title={'TYPESCRIPT'}discription={'discription skill'}/>
-                    <Skill style={javascript} title={'JAVASCRIPT'}discription={'discription skill'}/>
-                    <Skill style={html} title={'HTML'}discription={'discription skill'}/>
-                    <Skill style={css} title={'CSS'}discription={'discription skill'}/>
-                    <Skill style={api} title={'REST API'}discription={'discription skill'}/>
-                    <Skill style={ajax} title={'AXIOS'}discription={'discription skill'}/>
-                    <Skill style={git} title={'GITHUB'}discription={'discription skill'}/>
-                    <Skill style={sass} title={'SASS/SCSS'}discription={'discription skill'}/>
-                    <Skill style={tdd} title={'TDD'}discription={'discription skill'}/>
-                    <Skill style={storyBook} title={'STORYBOOK'}discription={'discription skill'}/>
-                    <Skill style={formik} title={'FORMIK'}discription={'discription skill'}/>
-                    <Skill style={materialUI} title={'MATERIAL-UI'}discription={'discription skill'}/>
-                    <Skill style={antDesign} title={'ANT-DESIGN'}discription={'discription skill'}/>
-                    <Skill style={figma} title={'FIGMA'}discription={'discription skill'}/>
-                    <Skill style={webpack} title={'WEBPACK'}discription={'discription skill'}/>
-                    <Skill style={node}  title={'NODE-JS'}discription={'discription skill'}/>
-                    <Skill  style={unitTests} title={'UNIT-TESTING'}discription={'discription skill'}/>
+                    <Skill style={react} title={'REACT'} />
+                    <Skill style={redux} title={'REDUX'} />
+                    <Skill style={typeScript} title={'TYPESCRIPT'}/>
+                    <Skill style={javascript} title={'JAVASCRIPT'}/>
+                    <Skill style={html} title={'HTML'}/>
+                    <Skill style={css} title={'CSS'}/>
+                    <Skill style={api} title={'REST API'}/>
+                    <Skill style={ajax} title={'AXIOS'}/>
+                    <Skill style={git} title={'GITHUB'}/>
+                    <Skill style={sass} title={'SASS/SCSS'}/>
+                    <Skill style={tdd} title={'TDD'}/>
+                    <Skill style={storyBook} title={'STORYBOOK'}/>
+                    <Skill style={formik} title={'FORMIK'}/>
+                    <Skill style={materialUI} title={'MATERIAL-UI'}/>
+                    <Skill style={antDesign} title={'ANT-DESIGN'}/>
+                    <Skill style={figma} title={'FIGMA'}/>
+                    <Skill style={webpack} title={'WEBPACK'}/>
+                    <Skill style={node}  title={'NODE-JS'}/>
+                    <Skill  style={unitTests} title={'UNIT-TESTING'}/>
+                    <Skill  style={SnapshotTests} title={'SNAPSHOT-TESTING'}/>
                 </div>
             </div>
         </div>

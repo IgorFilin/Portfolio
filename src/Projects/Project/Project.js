@@ -1,12 +1,6 @@
 import React from 'react';
 import s from './Project.module.scss'
-
-
-
 export const Project = (props) => {
-
-
-
     return (
         <div className={s.project}>
             <div className={s.imgProject} style={props.style}>

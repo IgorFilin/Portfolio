@@ -4,6 +4,7 @@ import {Project} from "./Project/Project";
 import HeaderTitle from "../common/HeaderTitle";
 import social from '.././common/img/socialNetwork.jpg'
 import todo from  '../common/img/todolist.jpg'
+import count from  '../common/img/counter.PNG'
 
 export const Projects = () => {
     const socialNetwork = {
@@ -11,6 +12,9 @@ export const Projects = () => {
     }
     const todolist = {
         backgroundImage:`url(${todo})`,
+    }
+    const counter = {
+        backgroundImage:`url(${count})`,
     }
 
     return (
@@ -20,6 +24,7 @@ export const Projects = () => {
                 <div className={s.projectsContainer}>
                     <Project style={socialNetwork} title={'Social network'} discription={'Discription project'}/>
                     <Project style={todolist} title={'Todolist'} discription={'Discription project'}/>
+                    <Project style={counter} title={'Counter'} discription={'Discription project'}/>
                 </div>
             </div>
         </div>
