@@ -23,45 +23,50 @@ import unitTestsSvg from './../common/img/icons/unitTests.svg'
 import javascriptSvg from './../common/img/icons/javascript.svg'
 import SnapshotSvg from './../common/img/icons/snapshot.svg'
 import {createURL} from "../common/utils/functionsUtils";
+import {AttentionSeeker} from "react-awesome-reveal";
 
 export const Skills = () => {
 
     const arrayIconAdressSkills = [
-        {adress:reactSvg,title:'REACT'},
-        {adress:reduxSvg,title:'REDUX'},
-        {adress:typeScriptSvg,title:'TYPESCRIPT'},
-        {adress:javascriptSvg,title:'JAVASCRIPT'},
-        {adress:htmlSvg,title:'HTML'},
-        {adress:cssSvg,title:'CSS'},
-        {adress:apiSvg,title:'REST API'},
-        {adress:ajaxSvg,title:'AXIOS'},
-        {adress:gitSvg,title:'GITHUB'},
-        {adress:sassSvg,title:'SASS/SCSS'},
-        {adress:tddSvg,title:'TDD'},
-        {adress:storyBookSvg,title:'STORYBOOK'},
-        {adress:formikSvg,title:'FORMIK'},
-        {adress:materialUISvg,title:'MATERIAL-UI'},
-        {adress:antDesignSvg,title:'ANT-DESIGN'},
-        {adress:figmaSvg,title:'FIGMA'},
-        {adress:webpackSvg,title:'WEBPACK'},
-        {adress:nodeSvg,title:'NODE-JS'},
-        {adress:unitTestsSvg,title:'UNIT-TESTING'},
-        {adress:SnapshotSvg,title:'SNAPSHOT-TESTING'},
+        {address: reactSvg, title: 'REACT'},
+        {address: reduxSvg, title: 'REDUX'},
+        {address: typeScriptSvg, title: 'TYPESCRIPT'},
+        {address: javascriptSvg, title: 'JAVASCRIPT'},
+        {address: htmlSvg, title: 'HTML'},
+        {address: cssSvg, title: 'CSS'},
+        {address: apiSvg, title: 'REST API'},
+        {address: ajaxSvg, title: 'AXIOS'},
+        {address: gitSvg, title: 'GITHUB'},
+        {address: sassSvg, title: 'SASS/SCSS'},
+        {address: tddSvg, title: 'TDD'},
+        {address: storyBookSvg, title: 'STORYBOOK'},
+        {address: formikSvg, title: 'FORMIK'},
+        {address: materialUISvg, title: 'MATERIAL-UI'},
+        {address: antDesignSvg, title: 'ANT-DESIGN'},
+        {address: figmaSvg, title: 'FIGMA'},
+        {address: webpackSvg, title: 'WEBPACK'},
+        {address: nodeSvg, title: 'NODE-JS'},
+        {address: unitTestsSvg, title: 'UNIT-TESTING'},
+        {address: SnapshotSvg, title: 'SNAPSHOT-TESTING'},
     ]
 
-    const arraySkills = arrayIconAdressSkills.map((skillAdressIcon,index) => {
-        return <Skill key={index} title={skillAdressIcon.title} style={createURL(skillAdressIcon.adress)}/>
+    const arraySkills = arrayIconAdressSkills.map((skillAdressIcon, index) => {
+        return <Skill key={index} title={skillAdressIcon.title} style={createURL(skillAdressIcon.address)}/>
     })
 
     return (
-        <div className={s.mainBlock}>
-            <div className={s.container}>
-                <HeaderTitle title={'Skills'}/>
-                <div className={s.skillsBlock}>
-                    {arraySkills}
+
+            <div id='skills' className={s.mainBlock}>
+                <div className={s.container}>
+                    <HeaderTitle title={'Skills'}/>
+                    <AttentionSeeker effect={'headShake'}>
+                        <div className={s.skillsBlock}>
+                            {arraySkills}
+                        </div>
+                    </AttentionSeeker>
                 </div>
             </div>
-        </div>
+
     );
 };
 

@@ -1,9 +1,10 @@
 @import "src/common/sass/variables";
+
 .mainContent {
   display: flex;
   align-items: center;
   background-color: $backgroundColor;
-  height: 100vh;
+  min-height: 100vh;
 
   .container {
     display: flex;
@@ -12,26 +13,41 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    @media screen and (max-width: 760px) {
+      margin-top: 100px;
+    }
+
     .text {
       align-self: start;
       line-height: 1.2;
       font-family: 'Poppins', sans-serif;
       color: $textColor;
-      width: 400px;
+
       .textHello {
         font-size: 30px;
         margin: 0;
       }
+
       .textName {
         font-size: 50px;
         font-weight: 700;
+        animation-duration: 2s;
+        animation-name: animate__slideInLeft;
+        @media screen and (max-width: 760px) {
+          font-size: 45px;
+        }
       }
+
+
       .textDeveloper {
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 18px;
+        @media screen and (max-width: 760px) {
+          font-size: 17px;
+        }
       }
 
     }
+
     .photo {
       width: 300px;
       border: 2px solid;

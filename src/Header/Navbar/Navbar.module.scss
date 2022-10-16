@@ -11,5 +11,15 @@
         line-height: 1.5em;
         font-size: 18px;
         margin-left: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+
     }
+    .active{
+        text-decoration: underline;
+    }
+
 }
+
+
