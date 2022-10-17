@@ -5,7 +5,7 @@ import {AttentionSeeker} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
 
 
-export const Main = (props) => {
+export const Main = () => {
     const [vantaEffect, setVantaEffect] = useState(null)
 
     const myRef = useRef(null)
@@ -35,38 +35,40 @@ export const Main = (props) => {
     }, [vantaEffect])
 
     return (
-        <div id={'main'} ref={myRef} className={s.mainContent}>
-                <div  className={s.container}>
+        <div id={'main'}>
+            <div ref={myRef} className={s.mainContent}>
+                <div className={s.container}>
                     <AttentionSeeker effect={'pulse'}>
-                    <article   className={s.text}><h5 className={s.textHello}>Hello,</h5>
-                        <h1 class={"animate__animated animate__slideInLeft"} >I’m<strong  className={s.textName} > IGOR FILIN</strong></h1>
-                        <p  className={s.textDeveloper}>
-                            <ReactTypingEffect
-                                text={["front-end developer"]}
-                                cursorRenderer={cursor => <h1>{cursor}</h1>}
-                                displayTextRenderer={(text, i) => {
-                                    return (
-                                        <h1>
-                                            {text.split('').map((char, i) => {
-                                                const key = `${i}`;
-                                                return (
-                                                    <span
-                                                        key={key}
-                                                        style={i%2 === 0 ? { color: 'magenta'} : {}}
-                                                    >{char}</span>
-                                                );
-                                            })}
-                                        </h1>
-                                    );
-                                }}
-                            />
-                        </p>
-                    </article>
+                        <article className={s.text}><h5 className={s.textHello}>Hello,</h5>
+                            <h1>I’m<strong className={s.textName}> IGOR FILIN</strong></h1>
+                            <div className={s.textDeveloper}>
+                                <ReactTypingEffect
+                                    text={["front-end developer"]}
+                                    cursorRenderer={cursor => <h1>{cursor}</h1>}
+                                    displayTextRenderer={(text) => {
+                                        return (
+                                            <h1>
+                                                {text.split('').map((char, i) => {
+                                                    const key = `${i}`;
+                                                    return (
+                                                        <span
+                                                            key={key}
+                                                            style={i % 2 === 0 ? {color: 'magenta'} : {}}
+                                                        >{char}</span>
+                                                    );
+                                                })}
+                                            </h1>
+                                        );
+                                    }}
+                                />
+                            </div>
+                        </article>
                         <div className={s.photo}>
-                        <img src="" alt="My photo"/>
-                    </div>
+                            <img src="" alt=""/>
+                        </div>
                     </AttentionSeeker>
                 </div>
+            </div>
         </div>
     );
 

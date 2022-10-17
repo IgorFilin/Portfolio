@@ -6,12 +6,14 @@ export const Navbar = () => {
 
     return (
         <div className={s.navbar}>
-            <Link activeClass={s.active} to="main" spy={true} smooth={true} offset={-71}  duration={1000}>MAIN</Link>
-            <Link activeClass={s.active} to="skills" spy={true} smooth={true} offset={-71} duration={1000}>SKILLS</Link>
-            <Link activeClass={s.active} to="projects" spy={true} smooth={true} offset={-71}
-                  duration={1000}>PROJECTS</Link>
-            <Link activeClass={s.active} to="contacts" spy={true} smooth={true} offset={-71}
-                  duration={1000}>CONTACTS</Link>
+            <Link offset={-65} spy={true} to='main' activeClass={s.active}>MAIN</Link>
+
+            <Link offset={-65} spy={true} to='skills' activeClass={s.active}>SKILLS</Link>
+
+            <Link offset={-65} spy={true} to='projects' activeClass={s.active}> PROJECTS</Link>
+
+            <Link offset={-65} spy={true} to='contacts' activeClass={s.active}> CONTACTS</Link>
+
         </div>
     );
 };
