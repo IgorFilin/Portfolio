@@ -7,6 +7,7 @@
   background-color: $backgroundColorDark;
   transition: 0.7s;
   &:hover{
+    cursor: pointer;
     transition: 0.7s;
     transform: scale(1.05) perspective(1px)
   }

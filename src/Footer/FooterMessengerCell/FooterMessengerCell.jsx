@@ -8,7 +8,7 @@ const FooterMessengerCell = (props) => {
         <Zoom bottom>
             <AttentionSeeker effect={'tada'}>
             <div className={s.blockMessenger}>
-                <a href="#">
+                <a target='_blank' href={props.addressMessenger}>
                     <svg width={'30px'} height={'30px'} className={s.imgMessenger} style={props.style}></svg>
                 </a>
             </div>

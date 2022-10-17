@@ -57,6 +57,8 @@
   }
 
   .buttonSubmit {
+    align-self: center;
+    margin-top: 30px;
     padding: 15px;
     @include contactsText;
     transition: 0.7s;
@@ -67,4 +69,10 @@
     }
   }
 
+}
+.errorText{
+  font-family: 'Poppins', sans-serif;
+  color: red;
+  font-size: 16px;
+  text-align: center;
 }

@@ -59,11 +59,9 @@ export const Skills = () => {
             <div id='skills' className={s.mainBlock}>
                 <div className={s.container}>
                     <HeaderTitle title={'Skills'}/>
-                    {/*<Zoom direction={'bottom'}>*/}
                         <div className={s.skillsBlock}>
                             {arraySkills}
                         </div>
-                    {/*</Zoom>*/}
                 </div>
             </div>
     );

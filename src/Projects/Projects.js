@@ -21,17 +21,22 @@ export const Projects = () => {
     const ticTacToe = {
         backgroundImage:`url(${tictaktoe})`,
     }
-
+   const projectAddress = {
+       socialNetwork:'https://igorfilin.github.io/samurai-way-main-typescript/',
+       todolist:'https://igorfilin.github.io/todolist/',
+       counter:'https://igorfilin.github.io/counter/',
+       ticTacToe:'https://igorfilin.github.io/tic-tac-toe/',
+   }
     return (
         <div id='projects' className={s.mainBlock}>
             <div className={s.container}>
                 <HeaderTitle  title={'Projects'}/>
                 <Zoom triggerOnce>
                 <div  className={s.projectsContainer} >
-                    <Project style={socialNetwork} title={'Social network'} discription={'Discription project'}/>
-                    <Project style={todolist} title={'Todolist'} discription={'Discription project'}/>
-                    <Project style={counter} title={'Counter'} discription={'Discription project'}/>
-                    <Project style={ticTacToe} title={'Tic-tac-toe'} discription={'Discription project'}/>
+                    <Project address={projectAddress.socialNetwork} style={socialNetwork} title={'Social network'} />
+                    <Project address={projectAddress.todolist} style={todolist} title={'Todolist'} />
+                    <Project address={projectAddress.counter}  style={counter} title={'Counter'} />
+                    <Project address={projectAddress.ticTacToe} style={ticTacToe} title={'Tic-tac-toe'} />
                 </div>
                 </Zoom>
             </div>
