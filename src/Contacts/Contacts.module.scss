@@ -24,14 +24,34 @@
       }
 
       & input {
+        font-family: 'Poppins', sans-serif;
         @include contactsText;
-        margin-bottom: 0.5rem
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 0.5rem;
+        transition: 0.7s;
+        &:focus{
+          background-color: #4a4a4a;
+        }
+        &:hover{
+          transition: 0.7s;
+          background-color: #4a4a4a;
+        }
       }
 
       & textarea {
+        padding: 5px;
         resize: none;
         height: 120px;
+        transition: 0.7s;
         @include contactsText;
+        &:focus{
+          background-color: #4a4a4a;
+        }
+        &:hover{
+          transition: 0.7s;
+          background-color: #4a4a4a;
+        }
       }
     }
   }
@@ -39,6 +59,12 @@
   .buttonSubmit {
     padding: 15px;
     @include contactsText;
+    transition: 0.7s;
+    &:hover{
+      transition: 0.7s;
+      background-color: #4a4a4a;
+      transform: scale(1.2) perspective(1px)
+    }
   }
 
 }

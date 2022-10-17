@@ -2,9 +2,14 @@
 
 .project {
   text-align: center;
-  width: 400px;
+  width: 300px;
   margin: 10px;
   background-color: $backgroundColorDark;
+  transition: 0.7s;
+  &:hover{
+    transition: 0.7s;
+    transform: scale(1.05) perspective(1px)
+  }
 
   .imgProject {
     position: relative;
@@ -34,28 +39,25 @@
       z-index: 1;
       color: #fff;
       padding: 10px 20px;
-
+      transition: 0.7s;
+      &:hover{
+        background: #4a4a4a;
+        transition: 0.7s;
+        transform: scale(1.1) perspective(1px)
+      }
     }
   }
 
   .textTitle {
-    margin: 5px;
+    margin: 5px 5px 15px 5px;
     font-size: 20px;
-    margin-bottom: 15px;
     font-weight: 500;
     color: $backgroundColor;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5em;
+    padding: 5px;
   }
 
-  .textDiscription {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 1.75em;
-    margin: 0 0 20px;
-    color: $backgroundColor;
-    font-weight: 500;
-  }
 }
 
 

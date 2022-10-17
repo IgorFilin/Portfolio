@@ -4,6 +4,7 @@ import Dots from 'vanta/dist/vanta.dots.min'
 import {AttentionSeeker} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
 import Zoom from 'react-reveal/Zoom';
+import  {Zoom as ZoomReval}  from "react-awesome-reveal";
 
 
 export const Main = () => {
@@ -41,16 +42,20 @@ export const Main = () => {
                 <div className={s.container}>
                     <AttentionSeeker effect={'pulse'}>
                         <article className={s.text}>
-                            <Zoom top>
+                            <ZoomReval direction={"down"}>
+                            <Zoom delay={10} duration={1200}  top cascade>
                                 <h5 className={s.textHello}>Hello,</h5>
                             </Zoom>
-                            <Zoom left>
+                            </ZoomReval>
+                            <ZoomReval direction={"left"}>
+                            <Zoom delay={10} duration={900}  left >
                                 <h1>I’m<strong className={s.textName}> IGOR FILIN</strong></h1>
                             </Zoom>
+                            </ZoomReval>
                             <div className={s.textDeveloper}>
                                 <ReactTypingEffect
                                     text={["front-end developer"]}
-                                    cursorRenderer={cursor => <h1>{cursor}</h1>}
+                                    cursorRenderer={cursor => <h2>{cursor}</h2>}
                                     displayTextRenderer={(text) => {
                                         return (
                                             <h1>

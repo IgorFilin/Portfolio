@@ -10,7 +10,6 @@ export const Project = (props) => {
                     <a className={s.buttonViewProject} href='#'>VIEW</a>
                 </div>
                 <h3 className={s.textTitle}>{props.title}</h3>
-                <h4 className={s.textDiscription}>{props.discription}</h4>
             </div>
         </AttentionSeeker>
     );

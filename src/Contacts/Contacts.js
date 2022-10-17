@@ -10,8 +10,8 @@ export const Contacts = () => {
                 <div className={s.content}>
                 <HeaderTitle title={'Contacts'}/>
                 <form className={s.formContacts}>
-                    <input placeholder={'Your Name'} type="text"/>
-                    <input placeholder={'Your Email'} type="email"/>
+                    <input placeholder='Your Name' type="text"/>
+                    <input placeholder='Your Email' type="email"/>
                     <textarea placeholder={'Your Message'}></textarea>
                 </form>
                 <button className={s.buttonSubmit}>Submit</button>
