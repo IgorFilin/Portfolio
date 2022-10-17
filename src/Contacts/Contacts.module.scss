@@ -6,7 +6,6 @@
   align-items: center;
   min-height: 100vh;
   background-color: $backgroundSecondColor;
-
   .content {
     display: flex;
     flex-direction: column;
@@ -27,8 +26,8 @@
         font-family: 'Poppins', sans-serif;
         @include contactsText;
         font-size: 14px;
-        padding: 5px;
-        margin-bottom: 0.5rem;
+        padding: 7px;
+        margin-top: 0.5rem;
         transition: 0.7s;
         &:focus{
           background-color: #4a4a4a;
@@ -44,6 +43,7 @@
         resize: none;
         height: 120px;
         transition: 0.7s;
+        margin-top: 0.5rem;
         @include contactsText;
         &:focus{
           background-color: #4a4a4a;

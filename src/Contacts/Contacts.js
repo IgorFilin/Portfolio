@@ -1,16 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Contacts.module.scss'
 import HeaderTitle from "../common/components/HeaderTitle";
 import {Zoom} from "react-awesome-reveal";
 import {useFormik} from "formik";
 import emailjs from '@emailjs/browser';
+import {Alert, Backdrop, CircularProgress, Snackbar} from "@mui/material";
 
 export const Contacts = () => {
-    // const templateParams = {
-    //     name: '',
-    //     email: '',
-    //     messages:'',
-    // };
+    const [open, setOpen] = useState(true);
+    const [openAlert, setOpenAlert] = useState(false);
+    const [StatusAlert, setStatusAlert] = useState(null);
+
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            debugger
+            return
+        }
+        setOpenAlert(false)
+
+    };
 
 
     const formik = useFormik({
@@ -35,19 +44,33 @@ export const Contacts = () => {
             return errors
         },
         onSubmit: values => {
-            // alert(JSON.stringify(values, null, 2));
+            setOpen(false)
             emailjs.send('service_rwe47k2', 'template_0bqp1k9', values, 'mKFoN5cse6LhizICK')
                 .then((response) => {
-                    console.log('SUCCESS!', response.status, response.text);
-                }, (err) => {
-                    console.log('FAILED...', err);
-                });
+                    setStatusAlert('success')
+                    setOpenAlert(true)
+                })
+                .catch((err) => {
+                    setStatusAlert('error')
+                    setOpenAlert(true)
+                })
+                .finally(() => {
+                    setOpen(true)
+                })
 
             formik.resetForm()
         },
     });
+
     return (
         <div id='contacts' className={s.mainBlock}>
+            <Snackbar anchorOrigin={{horizontal: 'left', vertical: 'bottom'}} open={openAlert} autoHideDuration={3000}
+                      onClose={handleClose}>
+                <Alert variant={"filled"} onClose={handleClose}
+                       severity={StatusAlert === "success" ? "success" : "error"}>
+                    {StatusAlert === "success" ? 'Thank you, your letter has been delivered!' : 'Sorry there was an error, please try again'}
+                </Alert>
+            </Snackbar>
             <Zoom className={s.content}>
                 <div className={s.content}>
                     <HeaderTitle title={'Contacts'}/>
@@ -69,6 +92,12 @@ export const Contacts = () => {
                     </form>
                 </div>
             </Zoom>
+            <Backdrop
+                sx={{color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1}}
+                open={!open}
+            >
+                <CircularProgress color="inherit"/>
+            </Backdrop>
         </div>
 
     );
