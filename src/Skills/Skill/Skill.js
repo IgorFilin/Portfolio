@@ -4,7 +4,7 @@ import {Zoom} from "react-awesome-reveal";
 
 export const Skill = (props) => {
     return (
-        <Zoom left>
+        <Zoom direction={'up'}>
         <div className={s.skillContainer}>
             <div className={s.iconContainer}>
                 <div className={s.iconBody} ></div>

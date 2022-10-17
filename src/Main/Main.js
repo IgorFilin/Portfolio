@@ -3,6 +3,7 @@ import s from './Main.module.scss'
 import Dots from 'vanta/dist/vanta.dots.min'
 import {AttentionSeeker} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
+import Zoom from 'react-reveal/Zoom';
 
 
 export const Main = () => {
@@ -39,8 +40,13 @@ export const Main = () => {
             <div ref={myRef} className={s.mainContent}>
                 <div className={s.container}>
                     <AttentionSeeker effect={'pulse'}>
-                        <article className={s.text}><h5 className={s.textHello}>Hello,</h5>
-                            <h1>I’m<strong className={s.textName}> IGOR FILIN</strong></h1>
+                        <article className={s.text}>
+                            <Zoom top>
+                                <h5 className={s.textHello}>Hello,</h5>
+                            </Zoom>
+                            <Zoom left>
+                                <h1>I’m<strong className={s.textName}> IGOR FILIN</strong></h1>
+                            </Zoom>
                             <div className={s.textDeveloper}>
                                 <ReactTypingEffect
                                     text={["front-end developer"]}
@@ -63,9 +69,11 @@ export const Main = () => {
                                 />
                             </div>
                         </article>
+                        <Zoom right>
                         <div className={s.photo}>
                             <img src="" alt=""/>
                         </div>
+                        </Zoom>
                     </AttentionSeeker>
                 </div>
             </div>
@@ -75,4 +83,4 @@ export const Main = () => {
 }
 
 
-
+// <Zoom direction={"left"} duration={1200}>

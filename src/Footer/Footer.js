@@ -6,12 +6,12 @@ import tg from "../common/img/icons/tg.svg";
 import wa from "../common/img/icons/wa.svg";
 import linked from "../common/img/icons/in.svg";
 import {createURL} from "../common/utils/functionsUtils";
-import {Zoom} from "react-awesome-reveal";
+import Zoom from 'react-reveal/Zoom';
 
 export const Footer = () => {
     return (
         <div className={s.mainBlock}>
-            <Zoom Bottom>
+            <Zoom bottom>
             <div className={s.contentBlock}>
                 <h3 className={s.myName}>Igor Filin</h3>
                 <div className={s.block}>

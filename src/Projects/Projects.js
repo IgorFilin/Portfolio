@@ -26,7 +26,7 @@ export const Projects = () => {
         <div id='projects' className={s.mainBlock}>
             <div className={s.container}>
                 <HeaderTitle  title={'Projects'}/>
-                <Zoom left>
+                <Zoom triggerOnce>
                 <div  className={s.projectsContainer} >
                     <Project style={socialNetwork} title={'Social network'} discription={'Discription project'}/>
                     <Project style={todolist} title={'Todolist'} discription={'Discription project'}/>

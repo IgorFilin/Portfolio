@@ -23,8 +23,8 @@ import unitTestsSvg from './../common/img/icons/unitTests.svg'
 import javascriptSvg from './../common/img/icons/javascript.svg'
 import SnapshotSvg from './../common/img/icons/snapshot.svg'
 import {createURL} from "../common/utils/functionsUtils";
-import {AttentionSeeker} from "react-awesome-reveal";
-import {Element} from 'react-scroll'
+import {Zoom} from "react-awesome-reveal";
+
 
 export const Skills = () => {
 
@@ -56,16 +56,16 @@ export const Skills = () => {
     })
 
     return (
-        <div id='skills' className={s.mainBlock}>
-            <div className={s.container}>
-                <HeaderTitle title={'Skills'}/>
-                <AttentionSeeker effect={'headShake'}>
-                    <div className={s.skillsBlock}>
-                        {arraySkills}
-                    </div>
-                </AttentionSeeker>
+            <div id='skills' className={s.mainBlock}>
+                <div className={s.container}>
+                    <HeaderTitle title={'Skills'}/>
+                    {/*<Zoom direction={'bottom'}>*/}
+                        <div className={s.skillsBlock}>
+                            {arraySkills}
+                        </div>
+                    {/*</Zoom>*/}
+                </div>
             </div>
-        </div>
     );
 };
 
