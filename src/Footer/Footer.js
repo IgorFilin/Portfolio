@@ -13,7 +13,7 @@ export const Footer = () => {
     const addressMessenger = {
         vk:'https://vk.com/filin2027',
         tg:'https://t.me/IgorFilin71',
-        wa:'https://wa.me/79200000000',
+        wa:'https://wa.me/79605942558',
         in:'https://www.linkedin.com/in/игорь-филин-703a6924b/'
     }
 
