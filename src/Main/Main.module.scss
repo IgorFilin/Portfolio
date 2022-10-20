@@ -15,17 +15,25 @@
     margin: 0 auto;
     @media screen and (max-width: 760px) {
       margin-top: 100px;
+      margin-bottom: 100px;
     }
 
     .text {
       align-self: start;
+      margin-bottom: 20px;
       line-height: 1.2;
       font-family: 'Poppins', sans-serif;
       color: $textColor;
+      @media screen and (max-width: 760px) {
+        margin-top: 25px;
 
+      }
       .textHello {
         font-size: 30px;
         margin: 0;
+        @media screen and (max-width: 760px) {
+          font-size: 30px;
+        }
       }
 
       .textName {
@@ -49,15 +57,36 @@
     }
 
     .photo {
-      width: 300px;
-      border: 2px solid;
-      height: 300px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 110%;
+        width: 105%;
+        border: 5px solid magenta;
+        left: 15px;
+        top: -15px;
+        z-index: -1;
+      }
+    }
+
+    .photo img {
+      width: 250px;
+      height: 370px;
+      transition: 0.8s;
+      &:hover {
+        transform: scale(1.05, 1.05);
+        transition: 1s;
+      }
     }
   }
 }
 
 
-
+.photo:hover::before{
+  transition: 0.8s;
+  transform: rotate(-180deg);
+}
 
 
 

@@ -5,6 +5,7 @@ import {AttentionSeeker} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
 import Zoom from 'react-reveal/Zoom';
 import  {Zoom as ZoomReval}  from "react-awesome-reveal";
+import photo from './../common/img/avatar/photo4.jpg'
 
 
 export const Main = () => {
@@ -76,7 +77,7 @@ export const Main = () => {
                         </article>
                         <Zoom right>
                         <div className={s.photo}>
-                            <img src="" alt=""/>
+                            <img src={photo} alt=""/>
                         </div>
                         </Zoom>
                     </AttentionSeeker>
