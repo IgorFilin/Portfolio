@@ -4,8 +4,9 @@ import Dots from 'vanta/dist/vanta.dots.min'
 import {AttentionSeeker} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
 import Zoom from 'react-reveal/Zoom';
-import  {Zoom as ZoomReval}  from "react-awesome-reveal";
+import {Zoom as ZoomReval} from "react-awesome-reveal";
 import photo from './../common/img/avatar/photo4.jpg'
+import MyCV from '../common/File/CV.txt'
 
 
 export const Main = () => {
@@ -44,14 +45,14 @@ export const Main = () => {
                     <AttentionSeeker effect={'pulse'}>
                         <article className={s.text}>
                             <ZoomReval direction={"down"}>
-                            <Zoom delay={10} duration={1200}  top cascade>
-                                <h5 className={s.textHello}>Hello,</h5>
-                            </Zoom>
+                                <Zoom delay={10} duration={1200} top cascade>
+                                    <h5 className={s.textHello}>Hello,</h5>
+                                </Zoom>
                             </ZoomReval>
                             <ZoomReval direction={"left"}>
-                            <Zoom delay={10} duration={900}  left >
-                                <h1>I’m<strong className={s.textName}> IGOR FILIN</strong></h1>
-                            </Zoom>
+                                <Zoom delay={10} duration={900} left>
+                                    <h1>I’m<strong className={s.textName}> IGOR FILIN</strong></h1>
+                                </Zoom>
                             </ZoomReval>
                             <div className={s.textDeveloper}>
                                 <ReactTypingEffect
@@ -74,11 +75,14 @@ export const Main = () => {
                                     }}
                                 />
                             </div>
+                            <Zoom delay={10} duration={900} right>
+                                <a className={s.btnDownloadCV} href={MyCV} download={'IgorFilinCV'}>Download CV</a>
+                            </Zoom>
                         </article>
                         <Zoom right>
-                        <div className={s.photo}>
-                            <img src={photo} alt=""/>
-                        </div>
+                            <div className={s.photo}>
+                                <img src={photo} alt=""/>
+                            </div>
                         </Zoom>
                     </AttentionSeeker>
                 </div>
