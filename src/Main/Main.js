@@ -6,7 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import Zoom from 'react-reveal/Zoom';
 import {Zoom as ZoomReval} from "react-awesome-reveal";
 import photo from './../common/img/avatar/photo4.jpg'
-import MyCV from '../common/File/CV.txt'
+import MyCV from '../common/File/CV.pdf'
 
 
 export const Main = () => {

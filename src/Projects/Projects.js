@@ -6,6 +6,8 @@ import social from '.././common/img/socialNetwork.jpg'
 import todo from  '../common/img/todolist.jpg'
 import count from  '../common/img/counter.PNG'
 import tictaktoe from '../common/img/tictactoe.jpg'
+import card from '../common/img/card.jpg'
+import filmDatabase from '../common/img/filmDatabase.jpg'
 import {Zoom} from "react-awesome-reveal";
 
 export const Projects = () => {
@@ -21,11 +23,19 @@ export const Projects = () => {
     const ticTacToe = {
         backgroundImage:`url(${tictaktoe})`,
     }
+    const cards = {
+        backgroundImage:`url(${card})`,
+    }
+    const filmsDatabase = {
+        backgroundImage:`url(${filmDatabase})`,
+    }
    const projectAddress = {
        socialNetwork:'https://igorfilin.github.io/samurai-way-main-typescript/',
        todolist:'https://igorfilin.github.io/todolist/',
        counter:'https://igorfilin.github.io/counter/',
        ticTacToe:'https://igorfilin.github.io/tic-tac-toe/',
+       cards:'https://samurai-way.github.io/Friday-app/',
+       movieDatabase:'https://igorfilin.github.io/movie-database/',
    }
     return (
         <div id='projects' className={s.mainBlock}>
@@ -37,6 +47,8 @@ export const Projects = () => {
                     <Project address={projectAddress.todolist} style={todolist} title={'Todolist'} />
                     <Project address={projectAddress.counter}  style={counter} title={'Counter'} />
                     <Project address={projectAddress.ticTacToe} style={ticTacToe} title={'Tic-tac-toe'} />
+                    <Project address={projectAddress.movieDatabase} style={filmsDatabase} title={'Movie database'} />
+                    <Project address={projectAddress.cards} style={cards} title={'Card'} />
                 </div>
                 </Zoom>
             </div>
