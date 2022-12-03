@@ -1,11 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.1870a75a.css",
-    "main.js": "/Portfolio/static/js/main.dcb56e82.js",
+    "main.js": "/Portfolio/static/js/main.31b04dfc.js",
     "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
     "static/media/photo4.jpg": "/Portfolio/static/media/photo4.fa29b4109462fb3caafd.jpg",
-    "static/media/tictactoe.jpg": "/Portfolio/static/media/tictactoe.f8c25ecf4ccc36d2821c.jpg",
+    "static/media/CV.pdf": "/Portfolio/static/media/CV.5fcb654fca2f681c335d.pdf",
+    "static/media/filmDatabase.jpg": "/Portfolio/static/media/filmDatabase.639167461ee2adc688e1.jpg",
     "static/media/todolist.jpg": "/Portfolio/static/media/todolist.034a662355dc38b9f449.jpg",
+    "static/media/card.jpg": "/Portfolio/static/media/card.654bab49e7fe8fbc92f0.jpg",
+    "static/media/tictactoe.jpg": "/Portfolio/static/media/tictactoe.c49e799386d4a3a0c912.jpg",
     "static/media/socialNetwork.jpg": "/Portfolio/static/media/socialNetwork.f507802055763d61cbba.jpg",
     "static/media/counter.PNG": "/Portfolio/static/media/counter.b4771ccd1500c8bdf119.PNG",
     "static/media/sass.svg": "/Portfolio/static/media/sass.8351205a93eafac2e392b26acf7580e1.svg",
@@ -33,13 +36,12 @@
     "static/media/snapshot.svg": "/Portfolio/static/media/snapshot.24cb3db43d18eb2dea77375c390ee397.svg",
     "static/media/tg.svg": "/Portfolio/static/media/tg.523612aef5712651761a400c8229de08.svg",
     "static/media/unitTests.svg": "/Portfolio/static/media/unitTests.f9efe1cfbabbc60ca2cac64a69c45a87.svg",
-    "static/media/CV.txt": "/Portfolio/static/media/CV.2eba09ca886ffbaa1823.txt",
     "main.1870a75a.css.map": "/Portfolio/static/css/main.1870a75a.css.map",
-    "main.dcb56e82.js.map": "/Portfolio/static/js/main.dcb56e82.js.map",
+    "main.31b04dfc.js.map": "/Portfolio/static/js/main.31b04dfc.js.map",
     "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1870a75a.css",
-    "static/js/main.dcb56e82.js"
+    "static/js/main.31b04dfc.js"
   ]
 }
