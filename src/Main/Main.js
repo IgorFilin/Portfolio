@@ -1,10 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react';
 import s from './Main.module.scss'
 import Dots from 'vanta/dist/vanta.dots.min'
-import {AttentionSeeker} from "react-awesome-reveal";
+import {AttentionSeeker, Zoom as ZoomReval} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
 import Zoom from 'react-reveal/Zoom';
-import {Zoom as ZoomReval} from "react-awesome-reveal";
 import photo from './../common/img/avatar/photo4.jpg'
 import MyCV from '../common/File/CV.pdf'
 
@@ -75,9 +74,9 @@ export const Main = () => {
                                     }}
                                 />
                             </div>
-                            <Zoom delay={10} duration={900} right>
-                                <a className={s.btnDownloadCV} href={MyCV} download={'IgorFilinCV'}>Download CV</a>
-                            </Zoom>
+                            {/*<Zoom delay={10} duration={900} right>*/}
+                            {/*    <a className={s.btnDownloadCV} href={MyCV} download={'IgorFilinCV'}>Download CV</a>*/}
+                            {/*</Zoom>*/}
                         </article>
                         <Zoom right>
                             <div className={s.photo}>
